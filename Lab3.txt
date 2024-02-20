@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab3
+{
+    public class Flower
+    {
+        private string _name;
+        private string _color;
+        private int _price;
+        private string _freshness;
+        private int _stem_length;
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
+        public string Color
+        {
+            get { return _color; }
+            set { _color = value; }
+        }
+
+        public int Price
+        {
+            get { return _price; }
+            set { _price = value; }
+        }
+
+        public string Freshness
+        {
+            get { return _freshness; }
+            set { _freshness = value; }
+        }
+
+        public int StemLength
+        {
+            get { return _stem_length; }
+            set { _stem_length = value; }
+        }
+
+
+        public class Rose: Flower
+        {
+            private int _bud_size;
+
+            public int Bud_size
+            {
+                get { return _bud_size; }
+                set { _bud_size = value; }
+            }
+        }
+
+        public class Lycoris_radiata : Flower
+        {
+            private int _stamen_length;
+
+            public int Stamen_length
+            {
+                get { return _stamen_length; }
+                set { _stamen_length = value; }
+            }
+        }
+
+        public class Lavender : Flower
+        {
+            private int _number_of_flowers;
+
+            public int Number_of_flowers
+            {
+                get { return _number_of_flowers; }
+                set { _number_of_flowers = value; }
+            }
+        }
+    }
+}
