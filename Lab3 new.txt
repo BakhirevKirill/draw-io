@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
+    public class Plant
+    {
+
+    }
+
     public class Flower
     {
         private string _name;
@@ -13,6 +18,8 @@ namespace Lab3
         private int _price;
         private string _freshness;
         private int _stemLength;
+
+        public Plant Plant { get; set; }
 
         public string Name
         {
@@ -44,67 +51,67 @@ namespace Lab3
             set { _stemLength = value; }
         }
     }
-    
-        public class Rose : Flower
+
+    public class Rose : Flower
+    {
+        private int _budSize;
+
+        public int BudSize
         {
-            private int _budSize;
-
-            public int BudSize
-            {
-                get { return _budSize; }
-                set { _budSize = value; }
-            }
+            get { return _budSize; }
+            set { _budSize = value; }
         }
+    }
 
-        public class Lycoris : Flower
+    public class Lycoris : Flower
+    {
+        private int _stamenLength;
+
+        public int StamenLength
         {
-            private int _stamenLength;
-
-            public int StamenLength
-            {
-                get { return _stamenLength; }
-                set { _stamenLength = value; }
-            }
+            get { return _stamenLength; }
+            set { _stamenLength = value; }
         }
+    }
 
-        public class Lavandula : Flower
+    public class Lavandula : Flower
+    {
+        private int _numberOfFlowers;
+
+        public int NumberOfFlowers
         {
-            private int _numberOfFlowers;
-
-            public int NumberOfFlowers
-            {
-                get { return _numberOfFlowers; }
-                set { _numberOfFlowers = value; }
-            }
+            get { return _numberOfFlowers; }
+            set { _numberOfFlowers = value; }
         }
+    }
 
-        public class Caninae : Rose
+    public class Caninae : Rose
+    {
+        private string _clade;
+        public string Clade
         {
-            private string _clade;
-            public string Clade
-            {
-                get { return _clade; }
-                set { _clade = value; }
-            }
+            get { return _clade; }
+            set { _clade = value; }
         }
+    }
 
-        public class LycorisRadiata : Lycoris
+    public class LycorisRadiata : Lycoris
+    {
+        private string _synonyms;
+        public string Synonyms
         {
-            private string _synonyms;
-            public string Synonyms
-            {
-                get { return _synonyms; }
-                set { _synonyms = value; }
-            }
+            get { return _synonyms; }
+            set { _synonyms = value; }
         }
+    }
 
-        public class LavandulaMultifida : Lavandula
+    public class LavandulaMultifida : Lavandula
+    {
+        private string _leaves;
+        public string Leaves
         {
-            private string _leaves;
-            public string Leaves
-            {
-                get { return _leaves; }
-                set { _leaves = value; }
-            }
+            get { return _leaves; }
+            set { _leaves = value; }
         }
+    }
 }
